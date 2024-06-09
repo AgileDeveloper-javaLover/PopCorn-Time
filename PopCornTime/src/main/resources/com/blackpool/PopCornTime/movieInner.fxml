@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="820.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blackpool.PopCornTime.UIController.MovieInnerController">
+   <children>
+      <Text fill="WHITE" layoutX="215.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rating">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="215.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release Year">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="ratingText" fill="#cf4314" layoutX="310.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="yearText" fill="#cf4314" layoutX="381.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2012">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="215.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Synopsis-">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="descText" editable="false" layoutX="220.0" layoutY="210.0" prefHeight="150.0" prefWidth="586.0" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <JFXToggleButton fx:id="addToFav" layoutX="513.0" layoutY="64.0" onAction="#addToFavourite" prefHeight="42.0" prefWidth="150.0" size="7.0" text="Favourite" textFill="#fdfdfd" toggleColor="#257406" toggleLineColor="#0aa23a" unToggleColor="RED" unToggleLineColor="#790d0d">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXToggleButton>
+      <Text fill="WHITE" layoutX="215.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="nameText" fill="#cf4314" layoutX="310.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="770.0" layoutY="10.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@close1.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text fill="WHITE" layoutX="215.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="215.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Language">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="cateText" fill="#cf4314" layoutX="346.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2012">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="langText" fill="#cf4314" layoutX="346.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2012">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="42.0" fitWidth="36.0" layoutX="687.0" layoutY="10.0" onMouseClicked="#shareMovie" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sharei.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

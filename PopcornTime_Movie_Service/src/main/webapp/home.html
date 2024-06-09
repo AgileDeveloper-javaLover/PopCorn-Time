@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PopCorn Time</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	crossorigin="anonymous">
+<style>
+label {
+	color: white;
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark p-2">
+		<a class="navbar-brand">PoPCorn Time</a>
+		<ul class="navbar-nav">
+			<li class="nav-item active"><a class="nav-link" href="/logout">LogOut</a>
+			<li class="nav-item active"><a class="nav-link" href="home.html">AddMovies</a>
+			<li class="nav-item active"><a class="nav-link" href="/allMovie">UpdateMovies</a>
+		</ul>
+	</nav>
+
+	<div class="container mt-2 p-1"
+		style="background-color: black; width: 600px; border-radius: 10px; height: fit-content; opacity: 0.9">
+
+
+		<form class="container p-1"
+			style="margin-bottom: 25px; margin-top: 20px" action="/addMovie"
+			method="POST" enctype="multipart/form-data">
+			<div>
+				<label for="name" class="form-label">Movie Name </label> <input
+					type="name" class="form-control" name="name">
+			</div>
+			<div>
+				<label for="desc" class="form-label">Movie Description</label><br>
+				<textarea rows="" class="form-control" cols="" name="desc"
+					style="width: 100%; border-radius: 5px; height: 70px"></textarea>
+
+			</div>
+			<div>
+				<label for="rating" class="form-label">Movie Rating</label> <input
+					type="text" class="form-control" name="rating">
+			</div>
+			<div>
+
+				<label for="rating" class="form-label">Year of Release</label> <input
+					type="text" class="form-control" name="release_Year">
+			</div>
+			<label class=" mb-0  mt-3">Movie Category</label>
+			<div class="mt-0 p-1 " style="width: 200px">
+				<br> <input type="checkbox" name="action" value="1"> <label
+					for="action">Action</label> <br> <input type="checkbox"
+					name="comedy" value="2"> <label for="comedy">Comedy</label>
+				<br> <input type="checkbox" name="horror" value="3"> <label
+					for="horror">Horror</label> <br> <input type="checkbox"
+					name="drama" value="4"> <label for="drama">Drama</label> <br>
+				<input type="checkbox" name="fantasy" value="5"> <label
+					for="fantasy">Fantasy</label> <br> <input type="checkbox"
+					name="mystery" value="6"> <label for="mystery">Mystery</label>
+				<br> <input type="checkbox" name="romance" value="7"> <label
+					for="romance">Romance</label> <br> <input type="checkbox"
+					name="thriller" value="8"> <label for="thriller">Thriller</label>
+			</div>
+			<label class=" mb-0  mt-3">Language</label>
+			<div class="mt-0 p-1 " style="width: 200px">
+				<br> <input type="checkbox" name="language" value="Bollywood">
+				<label for="language">Bollywood</label> <br> <input
+					type="checkbox" name="language" value="Hollywood"> <label
+					for="language">Hollywood</label><br> <input type="checkbox"
+					name="language" value="Tollywood"> <label for="language">Tollywood</label>
+				<br><input type="checkbox" name="language" value="Dhollywood"> <label
+					for="language">Dhollywood</label>
+
+			</div>
+			<div>
+				<label for="ss1" class="form-label">Movie ScreenShot</label> <input
+					type="file" class="form-control" name="ss1">
+			</div>
+			<div>
+				<label for="ss2" class="form-label">Movie ScreenShot</label> <input
+					type="file" class="form-control" name="ss2">
+			</div>
+
+			<div>
+				<label for="ss3" class="form-label">Movie ScreenShot</label> <input
+					type="file" class="form-control" name="ss3">
+			</div>
+
+			<div>
+				<label for="ss4" class="form-label">Movie ScreenShot</label> <input
+					type="file" class="form-control" name="ss4">
+			</div>
+
+			<br>
+			<button type="submit" class="btn btn-primary">Add</button>
+		</form>
+	</div>
+
+</body>
+</html>

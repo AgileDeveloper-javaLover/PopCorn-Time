@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="820.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blackpool.PopCornTime.UIController.ProfileController">
+   <children>
+      <Text fill="WHITE" layoutX="40.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" wrappingWidth="236.26667404174805">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="103.85546875">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="40.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <TextField fx:id="utext" layoutX="309.0" layoutY="40.0" prefHeight="44.0" prefWidth="354.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="mailtext" editable="false" layoutX="309.0" layoutY="106.0" prefHeight="44.0" prefWidth="354.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <PasswordField fx:id="passtext" layoutX="309.0" layoutY="173.0" prefHeight="44.0" prefWidth="354.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <CheckBox fx:id="romance" layoutX="73.0" layoutY="326.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Romance" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <Text fill="WHITE" layoutX="40.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interest">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="horror" layoutX="73.0" layoutY="375.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Horror" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="fantasy" layoutX="300.0" layoutY="326.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Fantasy" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="thriller" layoutX="73.0" layoutY="425.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Thriller" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="drama" layoutX="73.0" layoutY="477.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Drama" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="comedy" layoutX="301.0" layoutY="477.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Comedy" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="mystery" layoutX="300.0" layoutY="425.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Mystery" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="action" layoutX="300.0" layoutY="375.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Action" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="reset" layoutX="597.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#resetChanges" style="-fx-background-color: black;" text="Reset" textFill="#f00505">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="save" layoutX="680.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#saveUpdates" style="-fx-background-color: black;" text="Save" textFill="#4afd03">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="680.0" layoutY="179.0" onMousePressed="#showPassword" onMouseReleased="#hidePassword" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@eye.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="pass_hidden" editable="false" layoutX="309.0" layoutY="173.0" prefHeight="44.0" prefWidth="354.0" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+   </children>
+</AnchorPane>

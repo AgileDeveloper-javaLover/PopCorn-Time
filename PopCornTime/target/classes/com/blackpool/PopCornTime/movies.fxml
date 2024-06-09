@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="820.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blackpool.PopCornTime.UIController.MoviesController">
+   <children>
+      <AnchorPane prefHeight="54.0" prefWidth="820.0" style="-fx-background-color: black;">
+         <children>
+            <TextField fx:id="search" layoutX="364.0" layoutY="8.0" prefHeight="30.0" prefWidth="268.0" promptText="search">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="23.0" layoutY="6.0" onMouseClicked="#previous" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="65.0" layoutY="6.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@forwa.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="263.0" layoutY="13.0" onMouseClicked="#filter" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@filter.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="28.0" layoutX="652.0" layoutY="10.0" onMouseClicked="#searchMovieBYName" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@search.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <FlowPane id="paneback" fx:id="mainPane" hgap="40.0" prefHeight="500.0" prefWidth="826.0" stylesheets="@style.css" vgap="30.0">
+         <padding>
+            <Insets left="40.0" top="20.0" />
+         </padding>
+      </FlowPane>
+   </children>
+</VBox>

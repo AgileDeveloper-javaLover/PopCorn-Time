@@ -1,0 +1,20 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#paneback{
+	-fx-background-image: url("back.jpg");
+	-fx-z-index:-1;
+}
+
+.moviecol{
+	-fx-background-radius: 10;
+	-fx-background-color:rgba(0,0,0,0.9);
+}
+
+
+.txt{
+	-fx-stroke : #1f2120;
+    -fx-stroke-width: 2;
+    -fx-color:#13ffc4;
+    -fx-font-size:18px;
+    -fx-font-weight:bold;
+}
